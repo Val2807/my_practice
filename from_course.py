@@ -76,22 +76,35 @@
 #    print(f"Good morning, {name}")
 
 #exercise3.2_greeting input + for +list 
-count = int(input("Сколько человек ты хочешь поприветсвовать? "))
-names=[]
-for i in range(count):
-   name=input("Please write your name ")
-   names.append(name)
-for name in names:
-   print(f"Hello, {name}")
-count_letters=0
+# count = int(input("Сколько человек ты хочешь поприветсвовать? "))
+# names=[]
+# for i in range(count):
+#    name=input("Please write your name ")
+#    names.append(name)
+# for name in names:
+#    print(f"Hello, {name}")
+# count_letters=0
 
 # for j in range(len(names)):
 #    count_letters+=len(names[j])
 # print(count_letters)  #мой вариант 
 
-for name in names:
-   count_letters += len(name)
-print(count_letters)
+# for name in names:
+#    count_letters += len(name)
+# print(count_letters) #норм вариант
 
+#exercise4_function(sum of numbers)
+
+#сделал сам
+def add_numbers(*, number_1: float, number_2: float) -> float:
+   numbers_sum=number_1+number_2
+   return f"Сумма чисел {number_1} и {number_2} равна {numbers_sum}"
+print(add_numbers(number_1=3, number_2=4))
+
+#с чатом оптимизировал
+def add_numbers(*, number_1: float, number_2: float) -> float:
+   return number_1+number_2
+result = add_numbers(number_1=3, number_2=4)
+print(f"Сумма чисел равна {result}") 
 
 
