@@ -27,12 +27,17 @@ for student in students:
    if grades is None:
       average = 0
    else:
-      average = sum(grades) / len(grades)
-   
+      average = round((sum(grades) / len(grades)), 2)
    student_avg = {"name": name, "surname": surname, "average": average}
    averaged_students.append(student_avg)
 
 print(averaged_students)
+
+the_best_student = max(averaged_students, key=lambda student: student["average"])
+max_average = max(student["average"] for student in averaged_students)
+best_students = [student for student in averaged_students if student["average"] == max_average]
+print(best_students)
+
 
 
 
