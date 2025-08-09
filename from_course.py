@@ -242,4 +242,5 @@ def remove_all_spaces(text: str) -> str:
 
 print(remove_all_spaces("     Hello,    world       "))
 
-
+#научился открывать ветку
+print("Hello, world")
