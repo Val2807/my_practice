@@ -26,7 +26,7 @@ import math
 #       print("Ошибка: введите число")
 
 
-def quadratic_equation (a, b, c):
+def quadratic_equation (*, a: float, b: float, c: float) -> str:
       if a == 0:
           answer = "Это не квадратное уравнение (a = 0)"
       else:
@@ -43,4 +43,6 @@ def quadratic_equation (a, b, c):
                   answer = "Корней нет (дискриминант меньше 0)"
       return answer 
 
-print(quadratic_equation(8, 69, -21)) 
+print(quadratic_equation(a=8, b=69, c=-21))
+
+
