@@ -550,9 +550,9 @@
 # print(button_default | button_style | button_example)
 # print(button)
 
-my_name = 'Vale'
-my_hobby = 'running'
-time = 8
+# my_name = 'Vale'
+# my_hobby = 'running'
+# time = 8
 
 # info = my_name + ' likes ' + my_hobby + ' at ' + time + " o'clock"
 
@@ -670,7 +670,7 @@ time = 8
 
 # print(route_info(route_info_dict))
 
-my__img = ('1920', '1080')
+# my__img = ('1920', '1080')
 
 # info = f"{my__img[0]}x{my__img[1]}" if len(my__img) == 2 else 'incorrect img'
 
@@ -726,24 +726,162 @@ my__img = ('1920', '1080')
 # 	print(k, v)
 
 
+# #exersice_1
+# my_dict = {
+# 	'Bauer': 'Vapor',
+# 	'CCM': 'SuperTacks',
+# 	'price': 2000
+# }
 
-my_dict = {
-	'Bauer': 'Vapor',
-	'CCM': 'SuperTacks',
-	'price': 2000
+
+
+# def dict_to_list(dict_to_convert):
+# 	list_to_convertion = []
+# 	for key, value in dict_to_convert.items():
+# 		if type(value) == int:
+# 			value *= 2
+# 		list_to_convertion.append((key, value))
+# 	return list_to_convertion 
+
+# print(dict_to_list(my_dict))
+
+ 
+# #exersice_1.2
+# my_list = [122, True, 'car', 134, (21, 34, 'cat')]
+
+# def filter_list(list_to_filter, value_type):
+# 	filtered_list = []
+# 	for value in list_to_filter:
+# 			if type(value) == value_type:
+# 				filtered_list.append(value)
+# 	return filtered_list
+
+# 1
+#exercise
+# while True:
+# 	try:
+# 		num_1 = float(input("Write the first number: "))
+# 		num_2 = float(input("Write the second number: "))
+# 	except ValueError as e:
+# 		print(e)
+# 		print("You must enter numbers!")
+# 		continue
+
+# 	print(num_2 / num_1)
+
+# 	answer = input("Do you want to continiue? (yes/no): ")
+# 	if answer == 'no':
+# 		break
+
+#list comprehensions (сокращенный цикл for in)
+#not short for in
+# all_nums = [-3, 1, 0, 10, -20, 5]
+
+# absolute_nums = []
+
+# for num in all_nums:
+# 	absolute_nums.append(abs(num))
+
+# print(absolute_nums)
+
+# print(all_nums)
+
+# #short for in
+# all_nums = [-3, 1, 0, 10, -20, 5]
+
+# absolute_nums = [abs(num) for num in all_nums]
+
+# print(absolute_nums)
+
+# print(all_nums)
+
+# #forming a new list with filtration 
+# #long version
+# all_nums = [-3, 1, 0, 10, -20, 5]
+
+# positive_nums = []
+
+# for num in all_nums:
+# 	if num > 0:
+# 		positive_nums.append(num)
+
+# print(positive_nums)
+
+# print(all_nums) 
+
+# #short version
+# all_nums = [-3, 1, 0, 10, -20, 5]
+# positive_nums = [num for num in all_nums if num > 0]
+
+# print(positive_nums)
+
+# print(all_nums)
+
+# #set for in
+# my_set = {1, 10, 15}
+
+# new_set = set()
+
+# for val in my_set:
+# 	new_set.add(val * val)
+
+# print(new_set)
+
+# print(my_set)
+
+# #short for in
+# my_set = {1, 10, 15}
+# new_set = {val * val for val in my_set}
+
+# print(new_set)
+# print(my_set)
+
+# my_scores = {
+# 	'a': 10,
+# 	'b': 7, 
+# 	'm': 14
+# } 
+
+# scores = {}
+
+# for key, value in my_scores.items():
+# 	scores[key] = value * 10
+
+# print(scores)
+
+# print(my_scores)
+
+# #short
+# my_scores = {
+# 	'a': 10,
+# 	'b': 7, 
+# 	'm': 14
+# } 
+
+# scores = {v * 10 for k, v in my_scores.items()}
+
+# print(scores)
+
+# #from list to dict
+# my_scores = [10, 7, 14]
+
+# scores = {k: v for k, v in enumerate(my_scores)}
+
+# print(scores) 
+
+#exercise_1
+dict_one = {
+	'name': 'valentin',
+	'surname': 'nikonorov',
 }
 
-sticks_list = [] 
+new_dict = {k: v.upper() for k, v in dict_one.items()}
 
-def dict_to_list(sticks_dict):
-	sticks_list = []
-	for key, value in sticks_dict.items():
-		if type(value) is int:
-			value *= 2
-		sticks_list.append((key, value))
-	return sticks_list
+print(new_dict)
 
-print(dict_to_list(my_dict))
+#exercise_1.2
+surname_list = ['Vale', 'Anton', 'Max']
 
+long_surname_list = [elem for elem in surname_list if len(elem) > 3]
 
-def filter_list(list, value):
+print(long_surname_list) 
