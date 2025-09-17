@@ -880,8 +880,8 @@ new_dict = {k: v.upper() for k, v in dict_one.items()}
 print(new_dict)
 
 #exercise_1.2
-surname_list = ['Vale', 'Anton', 'Max']
+name_list = ['Vale', 'Anton', 'Max']
 
-long_surname_list = [elem for elem in surname_list if len(elem) > 3]
+long_name_list = [elem for elem in name_list if len(elem) > 3]
 
-print(long_surname_list) 
+print(long_name_list)
