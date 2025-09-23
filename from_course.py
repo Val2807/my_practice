@@ -217,30 +217,54 @@
 # print(max_of_three(4, 10, 6))
 
 #6
-def string_length(text: str) -> int:
-   return len(text)
-print(string_length(text="Hello"))
+# def string_length(text: str) -> int:
+#    return len(text)
+# print(string_length(text="Hello"))
 
-#7
-def remove_spaces(text: str) -> str:
-   return text.strip()
-print(remove_spaces("     Hello, world     "))
+# #7
+# def remove_spaces(text: str) -> str:
+#    return text.strip()
+# print(remove_spaces("     Hello, world     "))
 
-#8
-def remove_all_spaces(text: str) -> str:
-   remove_outside_spaces = text.strip()
-   remove_inside_spaces = text.replace(" ", "")
-   return remove_outside_spaces and remove_inside_spaces
-print(remove_all_spaces(text="     Hello,    world       "))
+# #8
+# def remove_all_spaces(text: str) -> str:
+#    remove_outside_spaces = text.strip()
+#    remove_inside_spaces = text.replace(" ", "")
+#    return remove_outside_spaces and remove_inside_spaces
+# print(remove_all_spaces(text="     Hello,    world       "))
 
-#8.1 (чат)
-def remove_all_spaces(text: str) -> str:
-   no_outside_spaces = text.strip()
-   words = no_outside_spaces.split()
-   cleaned_text = " ".join(words)
-   return cleaned_text
+# #8.1 (чат)
+# def remove_all_spaces(text: str) -> str:
+#    no_outside_spaces = text.strip()
+#    words = no_outside_spaces.split()
+#    cleaned_text = " ".join(words)
+#    return cleaned_text
 
-print(remove_all_spaces("     Hello,    world       "))
+# print(remove_all_spaces("     Hello,    world       "))
 
-#научился открывать ветку
-print("Hello, world")
+# #научился открывать ветку
+# print("Hello, world")
+
+#  задание
+#  напишите сортировку с лямбдой, которая вернёт минимальный элемент из списка `people`, сортировка должна быть
+#  сначала по возрасту, а потом по имени
+
+
+people = [
+    {"name": "Alice", "age": 25},
+    {"name": "Charlie", "age": 20},
+    {"name": "Bob", "age": 20},
+    {"name": "Diana", "age": 30},
+]
+
+
+
+min_element = min(people, key=lambda x: (x['age'], x['name']))
+
+print(min_element)
+
+
+
+
+
+
