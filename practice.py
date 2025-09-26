@@ -47,7 +47,7 @@
 # print(f"{avg:.2f}")
 
 #5 
-
+val/2025-09-25-practice
 #6
 # s = input()
 #6.1
@@ -76,10 +76,6 @@ def cut_string(string: str, width_num: int) -> str:
     return "\n".join(parts)
 
 print(cut_string(s, width))
-
-
-
-
 
 
 
@@ -122,6 +118,7 @@ print(cut_string(s, width))
 
 #циклы. 2.високосность года
 
+val/2025-09-25-practice
 # year = int(input("Enter the year: "))
 # if year % 4 == 0:
 #     if year % 100 == 0:
@@ -179,3 +176,4 @@ print(cut_string(s, width))
 #         factorial *= i
 
 # print(f"Факториал {num} равен {factorial}") 
+

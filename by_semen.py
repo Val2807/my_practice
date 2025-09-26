@@ -26,20 +26,20 @@ import math
 #       print("Ошибка: введите число")
 
 
-#Из универа с математическими действиями 
 #a
 z = 12
 y = math.log(z / 4, 6)
-
-
-print(y) 
+print(y)
 
 #b
 z = math.sin(math.radians(17))
 print(z)
 
 #c
-x = 2
-z = 3 ** (x + 2)
-print(z) 
- 
+x = 3
+z = 3 ** (x+2)
+print(z)
+
+#d 
+y = (math.e ** 3) - 10 ** (-1.4)
+print(y)
