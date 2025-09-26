@@ -26,6 +26,7 @@ import math
 #       print("Ошибка: введите число")
 
 
+hw/2025-09-16-function_quadratic_equation
 def quadratic_equation (*, a: float, b: float, c: float) -> str:
       try:
             if a == 0:
@@ -49,4 +50,22 @@ def quadratic_equation (*, a: float, b: float, c: float) -> str:
 
 print(quadratic_equation(a=8, b=69, c=-21))
 
+
+#a
+z = 12
+y = math.log(z / 4, 6)
+print(y)
+
+#b
+z = math.sin(math.radians(17))
+print(z)
+
+#c
+x = 3
+z = 3 ** (x+2)
+print(z)
+
+#d 
+y = (math.e ** 3) - 10 ** (-1.4)
+print(y)
 
