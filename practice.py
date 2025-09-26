@@ -47,6 +47,35 @@
 # print(f"{avg:.2f}")
 
 #5 
+val/2025-09-25-practice
+#6
+# s = input()
+#6.1
+# new_symbols = []
+# for symbol in s:
+#     if symbol.isupper():
+#         new_symbols.append(symbol.lower())
+#     elif symbol.islower():
+#         new_symbols.append(symbol.upper())
+#     else:
+#         new_symbols.append(symbol)
+
+# print(''.join(new_symbols))
+
+#6.2
+# print(s.swapcase())
+
+#8
+s = input()
+width = int(input())
+
+def cut_string(string: str, width_num: int) -> str:
+    parts = []
+    for i in range(0, len(string), width_num):
+        parts.append(string[i:i+width_num])
+    return "\n".join(parts)
+
+print(cut_string(s, width))
 
 
 
@@ -89,31 +118,62 @@
 
 #циклы. 2.високосность года
 
-year = int(input("Enter the year: "))
-if year % 4 == 0:
-    if year % 100 == 0:
-        if year % 400 == 0:
-            print(year, "год високосный")
-        else:
-            print(year, "год не високосный")
-    else:
-        print(year, "год високосный")
-else:
-    print(year, "год не високосный")
+val/2025-09-25-practice
+# year = int(input("Enter the year: "))
+# if year % 4 == 0:
+#     if year % 100 == 0:
+#         if year % 400 == 0:
+#             print(year, "год високосный")
+#         else:
+#             print(year, "год не високосный")
+#     else:
+#         print(year, "год високосный")
+# else:
+#     print(year, "год не високосный")
        
 
-#циклы. 3.наибольшее из трёх
-num1 = 234
-num2 = 3355
-num3 = 24
+# #циклы. 3.наибольшее из трёх
+# num1 = 234
+# num2 = 3355
+# num3 = 24
 
-if num1 > num2 and num1 > num3:
-    biggest = num1
-elif num2 > num3 and num2 > num1:
-    biggest = num2
-else:
-    biggest = num3
+# if num1 > num2 and num1 > num3:
+#     biggest = num1
+# elif num2 > num3 and num2 > num1:
+#     biggest = num2
+# else:
+#     biggest = num3
 
-print("Наибольшее число из трёх чисел", biggest)
+# print("Наибольшее число из трёх чисел", biggest)
 
- 
+#циклы. 4.простые числа в интервале
+# num_1 = int(input("Enter the lower number: "))
+# num_2 = int(input("Enter the upper number: "))
+
+# print("Диапазон чисел между", num_1, "и", num_2)
+
+# for num in range(num_1, num_2 + 1):
+#    if num > 1:
+#        for i in range(2, num):
+#            if (num % i) == 0:
+#                break
+#        else:
+#            print(num)
+
+# #циклы. 5.факториал числа 
+# num = int(input("Enter the number: "))
+
+# factorial = 1 
+
+# if num < 0:
+#     print("Для отрицательных чисел факториал не определен")
+
+# elif num == 0:
+#     print("Факториал 0 равен 1")
+
+# else:
+#     for i in range(1, num + 1):
+#         factorial *= i
+
+# print(f"Факториал {num} равен {factorial}") 
+
