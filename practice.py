@@ -47,7 +47,7 @@
 # print(f"{avg:.2f}")
 
 #5 
-val/2025-09-25-practice
+#val/2025-09-25-practice
 #6
 # s = input()
 #6.1
@@ -76,6 +76,28 @@ def cut_string(string: str, width_num: int) -> str:
     return "\n".join(parts)
 
 print(cut_string(s, width))
+
+
+#15
+def find_median(input_string: str):
+    num_list = list(map(int, input_string.split()))
+    sorted_num_list = sorted(num_list)
+
+    if len(sorted_num_list) % 2 == 0:  # чётное количество элементов
+        median = ((sorted_num_list[len(sorted_num_list) // 2 - 1]) +
+                  (sorted_num_list[len(sorted_num_list) // 2])) / 2
+    else:  # нечётное количество элементов
+        median = sorted_num_list[len(sorted_num_list) // 2]
+
+    # проверка на целое / дробное
+    if isinstance(median, float) and not median.is_integer():
+        return round(median, 1)
+    else:
+        return int(median)
+    
+
+    
+
 
 
 
@@ -118,7 +140,7 @@ print(cut_string(s, width))
 
 #циклы. 2.високосность года
 
-val/2025-09-25-practice
+#val/2025-09-25-practice
 # year = int(input("Enter the year: "))
 # if year % 4 == 0:
 #     if year % 100 == 0:
