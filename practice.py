@@ -66,16 +66,16 @@
 # print(s.swapcase())
 
 #8
-s = input()
-width = int(input())
+# s = input()
+# width = int(input())
 
-def cut_string(string: str, width_num: int) -> str:
-    parts = []
-    for i in range(0, len(string), width_num):
-        parts.append(string[i:i+width_num])
-    return "\n".join(parts)
+# def cut_string(string: str, width_num: int) -> str:
+#     parts = []
+#     for i in range(0, len(string), width_num):
+#         parts.append(string[i:i+width_num])
+#     return "\n".join(parts)
 
-print(cut_string(s, width))
+# print(cut_string(s, width))
 
 
 #15
@@ -95,6 +95,36 @@ def find_median(input_string: str):
     else:
         return int(median)
     
+#17 Palindrome 
+
+
+while True:
+    text = input("Введите слово: ")
+
+    if 1 <= len(text) <= 100 and text.isalpha():
+        break 
+    else:
+        print("❌ Ошибка: вводите только буквы (1–100 символов). Попробуйте снова.")
+
+def is_palindrome(word: str) -> bool:
+    if not (1 <= len(word) <= 100 and word.isalpha()):
+        raise ValueError("Некорректный ввод: можно только буквы (1–100)")    
+    original_word = word.casefold()
+    rev_word = original_word[::-1]
+    return original_word == rev_word
+
+
+result = is_palindrome(word=text) 
+print(result)
+
+
+
+
+
+
+
+
+
 
     
 
