@@ -47,7 +47,31 @@
 # print(f"{avg:.2f}")
 
 #5 
-#val/2025-09-25-practice
+#вариант с чатом gpt
+# from itertools import groupby
+# s = input().strip()
+
+# pairs_list = []
+# for key, group in groupby(s):
+#     new_pair = int(key), len(list(group))
+#     pairs_list.append(new_pair)
+
+# for key, count in pairs_list:
+#     print(f"({count}, {key})", end=" ")
+
+#правильный вариант с сайта
+from itertools import groupby
+
+s = input().strip()
+
+compressed = []
+for key, group in groupby(s):
+    count = len(list(group))
+    compressed.append(f"({count}, {key})")
+
+print(" ".join(compressed))
+
+
 #6
 # s = input()
 #6.1
@@ -60,7 +84,7 @@
 #     else:
 #         new_symbols.append(symbol)
 
-# print(''.join(new_symbols))
+# print(''.join(new_symbols)) 
 
 #6.2
 # print(s.swapcase())
@@ -79,43 +103,45 @@
 
 
 #15
-def find_median(input_string: str):
-    num_list = list(map(int, input_string.split()))
-    sorted_num_list = sorted(num_list)
+# def find_median(input_string: str):
+#     num_list = list(map(int, input_string.split()))
+#     sorted_num_list = sorted(num_list)
 
-    if len(sorted_num_list) % 2 == 0:  # чётное количество элементов
-        median = ((sorted_num_list[len(sorted_num_list) // 2 - 1]) +
-                  (sorted_num_list[len(sorted_num_list) // 2])) / 2
-    else:  # нечётное количество элементов
-        median = sorted_num_list[len(sorted_num_list) // 2]
+#     if len(sorted_num_list) % 2 == 0:  # чётное количество элементов
+#         median = ((sorted_num_list[len(sorted_num_list) // 2 - 1]) +
+#                   (sorted_num_list[len(sorted_num_list) // 2])) / 2
+#     else:  # нечётное количество элементов
+#         median = sorted_num_list[len(sorted_num_list) // 2]
 
-    # проверка на целое / дробное
-    if isinstance(median, float) and not median.is_integer():
-        return round(median, 1)
-    else:
-        return int(median)
+#     # проверка на целое / дробное
+#     if isinstance(median, float) and not median.is_integer():
+#         return round(median, 1)
+#     else:
+#         return int(median)
     
 #17 Palindrome 
 
 
-while True:
-    text = input("Введите слово: ")
+# while True:
+#     text = input("Введите слово: ")
 
-    if 1 <= len(text) <= 100 and text.isalpha():
-        break 
-    else:
-        print("❌ Ошибка: вводите только буквы (1–100 символов). Попробуйте снова.")
+#     if 1 <= len(text) <= 100 and text.isalpha():
+#         break 
+#     else:
+#         print("❌ Ошибка: вводите только буквы (1–100 символов). Попробуйте снова.")
 
-def is_palindrome(word: str) -> bool:
-    if not (1 <= len(word) <= 100 and word.isalpha()):
-        raise ValueError("Некорректный ввод: можно только буквы (1–100)")    
-    original_word = word.casefold()
-    rev_word = original_word[::-1]
-    return original_word == rev_word
+# def is_palindrome(word: str) -> bool:
+#     if not (1 <= len(word) <= 100 and word.isalpha()):
+#         raise ValueError("Некорректный ввод: можно только буквы (1–100)")    
+#     original_word = word.casefold()
+#     rev_word = original_word[::-1]
+#     return original_word == rev_word
 
 
-result = is_palindrome(word=text) 
-print(result)
+# result = is_palindrome(word=text) 
+# print(result)
+
+
 
 
 

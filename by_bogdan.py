@@ -27,14 +27,12 @@
 
 # print(sum_nums(route=10, b=5))
 
-# print(sum_nums(sum_nums(10, 5), 30)) 
+# print(sum_nums(sum_nums(10, 5), 30))
 
 # def sum(route, b,):
 # 	return route + b
 
 # print(sum(3, 5))
-
-
 
 
 # my_name = 'Vale'
@@ -47,7 +45,6 @@
 
 # other_num = my_num
 # print(id(other_num))
-
 
 
 # db_is_available = False
@@ -67,8 +64,6 @@
 
 
 # print(bool.__doc__)
-
-
 
 
 # posts_ids = [23, 43, 3, 409]
@@ -124,7 +119,7 @@
 
 # print(player_list)  #7
 
-#exersice2
+# exersice2
 
 # my_list_1 = ['Anton', 'Max', 'Vita']
 # my_list_2 = ['Vale', 'Son', 'Iana']   #1
@@ -151,7 +146,7 @@
 
 # my_motorbike['price'] = 20000
 
-# print(my_motorbike['price']) 
+# print(my_motorbike['price'])
 
 # my_motorbike = {
 # 	'brand': 'Ducati',
@@ -169,7 +164,7 @@
 
 # print(my_motorbike.get('model', 'unknown'))
 
-#dict
+# dict
 # my_disk = {}
 
 # print(id(my_disk))
@@ -195,7 +190,7 @@
 
 # print(my_dict)
 
-#homework_dicts
+# homework_dicts
 
 # practice_plan = {}
 
@@ -225,14 +220,13 @@
 # del practice_plan[dict_1_key]
 
 
-
 # print(practice_plan.get('kind'))
 
 # print(practice_plan[dict_3_key])
 
 # print(practice_plan)
 
-#with for
+# with for
 # practice_plan = {}
 
 # for i in range(3):
@@ -242,7 +236,7 @@
 
 # print(practice_plan)
 
-#tuples
+# tuples
 
 # my_nums = (10, 5, 100, 0, 5, 5)
 
@@ -261,7 +255,7 @@
 # print(my_nums)
 
 
-#tuples
+# tuples
 # my_tuple = (32, {'name': 'Vale', 'age': 23}, ['BMW', 'Mersedes', 'AUDI'])
 # other_tuple = (10.5, 'abc')
 
@@ -269,14 +263,14 @@
 
 # print(total_tuple)
 
-#set
+# set
 # my_set = {2, 10}
 # my_set.add(34)
 # other_set = {56, 2, 46, 10, 34}
 # general_set = my_set.intersection(other_set)
 # general_set_list = list(general_set)
 
-# print(general_set_list) 
+# print(general_set_list)
 
 # print(my_set & other_set)
 
@@ -284,7 +278,7 @@
 
 # print(my_set.issubset(other_set))
 
-#range
+# range
 # for n in range(2, 34, 4):
 # 	print(n)
 
@@ -308,12 +302,12 @@
 # print(my_list_1)
 
 
-#set
+# set
 # football = {"Иван", "Сергей", "Али", "Мехмет"}
 # hockey   = {"Сергей", "Али", "Денис", "Ахмет"}
 
 # f_h = football & hockey
-# f = football - hockey 
+# f = football - hockey
 # f_or_h = football | hockey
 # print(f_h, f, f_or_h)
 
@@ -338,9 +332,6 @@
 # goods_prices_zip = zip(goods, prices)
 
 
-
-
-
 # goods_prices_dict = dict(goods_prices_zip)
 
 # print(goods_prices_dict)
@@ -362,13 +353,12 @@
 # print(info_deepcopy)
 
 
-
 # def sum(route, b):
 # 	c = route + b
 # 	return c
 
 # sum(2, 6)
-# sum(4, 5)  
+# sum(4, 5)
 
 # def my_fn(route, b):
 # 	route = route + 1
@@ -401,10 +391,10 @@
 # def update_car_info(**car):
 # 	car['is available'] = True
 # 	return car
-# print(update_car_info(model='BMW', year= 2015)) 
-# print(update_car_info(model='BMW', year= 2015)) 
+# print(update_car_info(model='BMW', year= 2015))
+# print(update_car_info(model='BMW', year= 2015))
 
-# from datetime import datetime 
+# from datetime import datetime
 # def get_weekday():
 # 	return datetime.now().strftime("%A")
 
@@ -425,8 +415,6 @@
 # print(post_with_weekday)
 
 # print(initial_post)
-
-
 
 
 # def sum_nums(*args):
@@ -521,7 +509,7 @@
 
 # print(dict_one == dict_two and "dictionary are equal")
 
-#оператор распаковки словаря **
+# оператор распаковки словаря **
 # button_default = {
 # 	'text': 'Okay',
 # 	'color': 'black',
@@ -531,7 +519,7 @@
 
 # button_style = {
 # 	'color': 'red',
-# 	'width': 200, 
+# 	'width': 200,
 # 	'height': 300
 # }
 
@@ -557,14 +545,14 @@
 # info = my_name + ' likes ' + my_hobby + ' at ' + time + " o'clock"
 
 # info = f"{my_name} likes {my_hobby} at {str(time)} clock"
-# print(info.title()) 
+# print(info.title())
 
 # my_name = 'Vale'
 # my_age = 25
 # my_parents = ['Yurii', 'Galina']
 # my_adres = {'city': 'Istanbul', 'street': 'sk 2288', 'building': '5'}
 
-# info = f"{my_name} lives in {my_adres} with his parents {my_parents} and he's {my_age} years old" 
+# info = f"{my_name} lives in {my_adres} with his parents {my_parents} and he's {my_age} years old"
 # print(info)
 
 # def mult(route, b):
@@ -598,7 +586,7 @@
 # 	print(10/0)
 # except ZeroDivisionError as e:
 # 	print(isinstance())
-# 	print(e) 
+# 	print(e)
 
 # except TypeError as e:
 # 	print(e)
@@ -607,11 +595,9 @@
 # print('Continue...')
 
 
-
-
 # def image_info(img):
 # 	if ('image_id' not in img) or ('image_title' not in img):
-# 		raise TypeError("Keys image_id and image_title must be present")  
+# 		raise TypeError("Keys image_id and image_title must be present")
 # 	return f"Image {img['image_title']} has id {img['image_id']}"
 
 
@@ -628,7 +614,7 @@
 # 	print(e)
 
 
-#распаковка
+# распаковка
 # my_list = [1, 2, 3]
 
 # first, second, third = my_list
@@ -645,14 +631,14 @@
 # def user_info(name, comments_qty=0):
 # 	if not comments_qty:
 # 		return f"{name} has no comments"
-	
+
 # 	return f"{name} has {comments_qty} comments"
 
 # print(user_info(**user_profile))
 
 
-# list_dict = [{'brand': 'Bauer', 'remainder': 2}, 
-# 				{'brand': 'ccm', 'remainder': 0}, 
+# list_dict = [{'brand': 'Bauer', 'remainder': 2},
+# 				{'brand': 'ccm', 'remainder': 0},
 # 				{'brand': 'sher wood', 'remainder': '5'}]
 
 # first, second, third = list_dict
@@ -660,7 +646,7 @@
 # def sticks_info(brand, remainder):
 # 	if remainder == 0:
 # 		return f"We don't have stciks in stock by {brand}"
-	
+
 # 	return f"We have {remainder} stciks in stock by {brand}"
 
 # print(sticks_info(**first))
@@ -671,15 +657,14 @@
 # 	pass
 
 
-
-#if, elif, else
+# if, elif, else
 # def nums_info(route, b):
 # 	if (type(route) is not int) or (type(b) is not int):
 # 		return f"Один из аргументов не целое число"
-	
+
 # 	if route>= b:
 # 		return f"{route} больше или равно {b}"
-	
+
 # 	return f"{route} меньше {b}"
 
 # print(nums_info(True, 10))
@@ -701,7 +686,7 @@
 
 
 # def route_info(route):
-# 	if "distance" in route and type(route['distance']) is int: 
+# 	if "distance" in route and type(route['distance']) is int:
 # 		distance_answer = f"Distance to your destination is {route['distance']}"
 # 	elif "speed" in route and "time" in route:
 # 		distance_answer = f"Distance to your destination is {route['speed'] * route['time']}"
@@ -728,15 +713,12 @@
 # 	print('incorrect img')
 
 
-
-
-
 # my_str = "fkktokg otkokgokot moormormfm 5ogjrmvmq4ievmtmfvm mmormvo rvomomot  ormormmfoldoe oeld,kr,dkf"
 
 # info = "string is long" if len(my_str) > 94 else "string is short"
 # print(info)
 
-#iterations
+# iterations
 # my_object = {
 # 	'x': 10,
 # 	'y': True,
@@ -764,7 +746,7 @@
 # }
 
 # for item in my_object.items():
-# 	key, value = item 
+# 	key, value = item
 # 	print(key, value)
 
 # for k, v in my_object.items():
@@ -779,18 +761,17 @@
 # }
 
 
-
 # def dict_to_list(dict_to_convert):
 # 	list_to_convertion = []
 # 	for key, value in dict_to_convert.items():
 # 		if type(value) == int:
 # 			value *= 2
 # 		list_to_convertion.append((key, value))
-# 	return list_to_convertion 
+# 	return list_to_convertion
 
 # print(dict_to_list(my_dict))
 
- 
+
 # #exersice_1.2
 # my_list = [122, True, 'car', 134, (21, 34, 'cat')]
 
@@ -802,7 +783,7 @@
 # 	return filtered_list
 
 # 1
-#exercise
+# exercise
 # while True:
 # 	try:
 # 		num_1 = float(input("Write the first number: "))
@@ -818,8 +799,8 @@
 # 	if answer == 'no':
 # 		break
 
-#list comprehensions (сокращенный цикл for in)
-#not short for in
+# list comprehensions (сокращенный цикл for in)
+# not short for in
 # all_nums = [-3, 1, 0, 10, -20, 5]
 
 # absolute_nums = []
@@ -840,7 +821,7 @@
 
 # print(all_nums)
 
-# #forming a new list with filtration 
+# #forming a new list with filtration
 # #long version
 # all_nums = [-3, 1, 0, 10, -20, 5]
 
@@ -852,7 +833,7 @@
 
 # print(positive_nums)
 
-# print(all_nums) 
+# print(all_nums)
 
 # #short version
 # all_nums = [-3, 1, 0, 10, -20, 5]
@@ -883,9 +864,9 @@
 
 # my_scores = {
 # 	'a': 10,
-# 	'b': 7, 
+# 	'b': 7,
 # 	'm': 14
-# } 
+# }
 
 # scores = {}
 
@@ -899,9 +880,9 @@
 # #short
 # my_scores = {
 # 	'a': 10,
-# 	'b': 7, 
+# 	'b': 7,
 # 	'm': 14
-# } 
+# }
 
 # scores = {v * 10 for k, v in my_scores.items()}
 
@@ -912,21 +893,100 @@
 
 # scores = {k: v for k, v in enumerate(my_scores)}
 
-# print(scores) 
+# print(scores)
 
-#exercise_1
-dict_one = {
-	'name': 'valentin',
-	'surname': 'nikonorov',
-}
+# exercise_1
+# dict_one = {
+#     'name': 'valentin',
+#     'surname': 'nikonorov',
+# }
 
-new_dict = {k: v.upper() for k, v in dict_one.items()}
+# new_dict = {k: v.upper() for k, v in dict_one.items()}
 
-print(new_dict)
+# print(new_dict)
 
-#exercise_1.2
-surname_list = ['Vale', 'Anton', 'Max']
+# # exercise_1.2
+# surname_list = ['Vale', 'Anton', 'Max']
 
-long_surname_list = [elem for elem in surname_list if len(elem) > 3]
+# long_surname_list = [elem for elem in surname_list if len(elem) > 3]
 
-print(long_surname_list) 
+# print(long_surname_list)
+
+
+# classes and objects
+# class Car:
+#     def move(self):
+#         print("Car is moving")
+
+#     def stop(self):
+#         print("Car stoped")
+
+
+# my_car = Car()
+# my_car.move()
+# my_car.stop()
+
+# print(my_car)
+# print(type(my_car))
+# print(isinstance(my_car, Car))
+# print(isinstance(my_car, object))
+# print(dir(my_car))
+
+# my_second_car = Car()
+
+# print(my_car == my_second_car)
+
+# Car.move(my_car)
+
+
+# Creating an instance of a class
+class Comment:
+    def __init__(self, text):
+        self.text = text
+        self.votes_qty = 0
+
+    def upvote(self, qty):
+        self.votes_qty += qty
+
+    def reset_votes_qty(self):
+        self.votes_qty = 0
+
+
+my_comment = Comment("My coment")
+
+print(my_comment.votes_qty)
+
+my_comment.upvote(10)
+my_comment.upvote(20)
+
+print(my_comment.votes_qty)
+
+my_comment.reset_votes_qty()
+
+print(my_comment.votes_qty)
+
+
+# exercise_classes_1
+
+class Image:
+    def __init__(self):
+        self.resolution = '1920 x 1080'
+        self.title = 'photo'
+        self.extension = 'png'
+
+    def resize(self, resolution):
+        self.resolution = resolution
+
+    def upper_title(self):
+        self.title = self.title.upper()
+
+
+new_image = Image()
+print(new_image.resolution)
+print(new_image.extension)
+
+new_image.resize('1600 x 1200')
+print(new_image.resolution)
+
+new_image.upper_title()
+print(new_image.title)
